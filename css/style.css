@@ -377,6 +377,8 @@ button {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/Dark-bg_desk@1x.webp);
+
+    padding: 188px 0;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -421,7 +423,6 @@ button {
 @media screen and (min-width: 1158px) {
   .hero {
     max-width: 1400px;
-    height: 600px;
   }
 }
 .btn-hero {
