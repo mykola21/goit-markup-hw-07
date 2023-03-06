@@ -454,12 +454,13 @@ button {
 .our-future-list {
   max-width: 396px;
   text-align: start;
-  /* list-style-type: none;
-  display: flex;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* display: flex;
   justify-content: center;
-  text-align: center;
-  
-  gap: 24px; */
+  text-align: center; */
 }
 
 .our-future-item {
@@ -1470,6 +1471,8 @@ button {
   text-transform: capitalize;
   color: var(--color-iris);
   margin-bottom: 40px;
+  list-style: none;
+  text-decoration: none;
 }
 
 .link-address {
@@ -1480,6 +1483,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--color-slate);
   margin-bottom: 48px;
+  text-decoration: none;
 }
 
 .mobile-menu-contact {
