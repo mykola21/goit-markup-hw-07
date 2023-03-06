@@ -51,6 +51,7 @@ html {
 
 body {
   font-family: var(--text-family-roboto);
+  overflow: scroll;
 }
 
 /* reset */
@@ -399,6 +400,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--color-white);
   width: 320px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 72px;
@@ -1440,7 +1442,7 @@ button {
 }
 
 .mobile-menu:nth-child(2) {
-  margin-bottom: 284px;
+  margin-bottom: 254px;
 }
 
 .link {
