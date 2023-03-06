@@ -302,9 +302,9 @@ button {
 }
 
 /* hero section */
-
 .hero {
-  max-width: 1440px;
+  max-width: 1400px;
+
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -320,11 +320,30 @@ button {
   padding: 112px 0;
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .box {
-    background-image: url(../images/hero/Dark-bg_mob@2x.jpg);
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/Dark-bg_mob@1x.jpg);
+
+    background-size: cover;
+    background-color: var(--color-navy-blue);
+    text-align: center;
+    padding: 112px 0;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/Dark-bg_mob@2x.jpg);
+    }
   }
 }
 
@@ -340,8 +359,12 @@ button {
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .box {
-      background-image: url(../images/hero/Dark-bg_tab@2x.jpg);
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/Dark-bg_tab@2x.jpg);
     }
   }
 }
@@ -358,8 +381,12 @@ button {
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .box {
-      background-image: url(../images/hero/Dark-bg_desk@2x.jpg);
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero/Dark-bg_desk@2x.jpg);
     }
   }
 }
@@ -392,6 +419,7 @@ button {
 @media screen and (min-width: 1158px) {
   .hero {
     max-width: 1400px;
+    height: 600px;
   }
 }
 .btn-hero {
