@@ -464,7 +464,7 @@ button {
 }
 
 .our-future-item {
-  width: 396px;
+  max-width: 396px;
   margin-bottom: 72px;
 }
 
