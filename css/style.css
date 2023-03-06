@@ -311,7 +311,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero/Dark-bg_mob@1x.jpg);
+    url(../images/hero/Dark-bg_mob@1x.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -320,13 +320,13 @@ button {
   padding: 112px 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero/Dark-bg_mob@1x.jpg);
+      url(../images/hero/Dark-bg_mob@1x.webp);
 
     background-size: cover;
     background-color: var(--color-navy-blue);
@@ -342,7 +342,7 @@ button {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero/Dark-bg_mob@2x.jpg);
+        url(../images/hero/Dark-bg_mob@2x.webp);
     }
   }
 }
@@ -353,7 +353,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero/Dark-bg_tab@1x.jpg);
+      url(../images/hero/Dark-bg_tab@1x.webp);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -364,7 +364,7 @@ button {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero/Dark-bg_tab@2x.jpg);
+        url(../images/hero/Dark-bg_tab@2x.webp);
     }
   }
 }
@@ -375,7 +375,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero/Dark-bg_desk@1x.jpg);
+      url(../images/hero/Dark-bg_desk@1x.webp);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -386,7 +386,7 @@ button {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/hero/Dark-bg_desk@2x.jpg);
+        url(../images/hero/Dark-bg_desk@2x.webp);
     }
   }
 }
