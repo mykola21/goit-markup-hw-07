@@ -233,7 +233,6 @@ button {
 
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 18px;
     padding-bottom: 19px;
   }
 }
@@ -533,6 +532,11 @@ button {
 }
 
 .our-future-subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: capitalize;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
   text-transform: capitalize;
@@ -541,9 +545,13 @@ button {
 }
 
 .our-future-text {
+  font-weight: 500;
+
   font-size: 16px;
   line-height: calc(24 / 16);
   color: var(--color-slate);
+
+  letter-spacing: 0.02em;
 }
 
 @media screen and (min-width: 768px) {
@@ -749,6 +757,29 @@ button {
   padding: 16px 32px;
   border: 1px solid var(--color-light-slate);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 425px) {
+  .custom-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 8px;
+    row-gap: 36px;
+  }
+
+  .custom-link {
+    width: 140px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px 32px;
+    border: 1px solid var(--color-light-slate);
+    border-radius: 4px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1088,7 +1119,7 @@ button {
 
 .subscribe-input {
   display: block;
-  width: 398px;
+  width: 100%;
   height: 40px;
   background-color: rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1098,7 +1129,12 @@ button {
   padding: 8px 16px;
   color: var(--color-white);
   /* margin-right: 24px; */
-  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe-input {
+    margin-bottom: 16px;
+  }
 }
 
 .subscribe-box-bottom {
@@ -1128,7 +1164,7 @@ button {
 .send-icon {
   position: absolute;
   top: 90%;
-  right: 140px;
+  right: 50px;
   transform: translateY(-90%);
   fill: var(--color-white);
   /* position: absolute;
@@ -1158,9 +1194,9 @@ button {
   }
 
   .send-icon {
-    top: 25%;
-    right: 24px;
-    transform: translateY(-25%);
+    top: 33px;
+    right: 25px;
+    transform: translateY(-25px);
   }
 }
 
@@ -1194,7 +1230,7 @@ button {
   left: 50%;
 
   transform: translate(-50%, -50%);
-  width: 408px;
+  max-width: 408px;
   min-height: 576px;
   background-color: var(--color-modal);
   border-radius: 4px;
@@ -1237,6 +1273,8 @@ button {
 }
 
 .modal-icon {
+  /* width: 8px;
+  height: 8px; */
   fill: var(--color-black);
 }
 
@@ -1402,9 +1440,9 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 32px;
   background-color: var(--color-white);
   padding: 40px;
+  padding-left: 35px;
   z-index: 999;
   overflow: scroll;
 
@@ -1419,11 +1457,13 @@ button {
   top: 16px;
   right: 16px;
   color: #fff;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
+  min-height: 24px;
+  min-width: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1443,6 +1483,11 @@ button {
   }
 }
 
+.menu-container-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
 .mobile-menu {
   padding: 0;
   margin: 0;
@@ -1451,14 +1496,11 @@ button {
   flex-direction: column;
   gap: 40px;
   margin-top: 40px;
+  padding-bottom: 100px;
 }
 .mobile-menu .link {
   display: block;
   text-decoration: none;
-}
-
-.mobile-menu:nth-child(2) {
-  margin-bottom: 254px;
 }
 
 .link {
@@ -1476,7 +1518,7 @@ button {
 
 .link-tel {
   display: block;
-  width: 353px;
+  max-width: 353px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(40 / 36);
@@ -1486,6 +1528,13 @@ button {
   margin-bottom: 40px;
   list-style: none;
   text-decoration: none;
+}
+
+@media screen and (max-width: 427px) {
+  .link-tel {
+    font-size: 26px;
+    letter-spacing: 0.01em;
+  }
 }
 
 .link-address {
@@ -1500,6 +1549,7 @@ button {
 }
 
 .mobile-menu-contact {
+  display: block;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
@@ -1516,8 +1566,8 @@ button {
 .menu-contacts-list {
   display: flex;
   align-items: center;
-  justify-content: start;
-  gap: 56px;
+  justify-content: space-between;
+
   padding: 0;
   margin: 0;
   color: var(--color-cornflower);
