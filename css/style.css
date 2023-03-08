@@ -331,7 +331,7 @@ button {
 
 /* hero section */
 .hero {
-  max-width: 1400px;
+  max-width: 1440px;
 
   margin-left: auto;
   margin-right: auto;
@@ -421,7 +421,7 @@ button {
   line-height: calc(40 / 36);
   letter-spacing: 0.02em;
   color: var(--color-white);
-  width: 320px;
+  max-width: 320px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -438,7 +438,6 @@ button {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1158px;
     padding: 188px 0;
   }
 }
@@ -478,14 +477,9 @@ button {
   margin-bottom: 72px;
 }
 
-.our-future-item:nth-child(4) {
-  margin: 0;
-}
-
 @media screen and (min-width: 768px) {
   .our-future-list {
     display: flex;
-    align-items: center;
     justify-content: center;
     max-width: 768px;
     flex-wrap: wrap;
@@ -497,9 +491,9 @@ button {
     width: 356px;
   }
 
-  .our-future-item:nth-child(n + 3) {
+  /* .our-future-item:nth-child(n + 3) {
     margin: 0;
-  }
+  } */
 }
 
 @media screen and (min-width: 1200px) {
@@ -511,9 +505,6 @@ button {
 
   .our-future-item {
     width: 264px;
-  }
-
-  .our-future-item {
     margin: 0;
   }
 }
@@ -1134,6 +1125,7 @@ button {
 @media screen and (max-width: 768px) {
   .subscribe-input {
     margin-bottom: 16px;
+    width: 300px;
   }
 }
 
@@ -1164,7 +1156,7 @@ button {
 .send-icon {
   position: absolute;
   top: 90%;
-  right: 50px;
+  right: 88px;
   transform: translateY(-90%);
   fill: var(--color-white);
   /* position: absolute;
@@ -1230,6 +1222,7 @@ button {
   left: 50%;
 
   transform: translate(-50%, -50%);
+  width: 95%;
   max-width: 408px;
   min-height: 576px;
   background-color: var(--color-modal);
@@ -1444,8 +1437,7 @@ button {
   padding: 40px;
   padding-left: 35px;
   z-index: 999;
-  overflow: scroll;
-
+  display: flex;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -1486,6 +1478,7 @@ button {
 .menu-container-wrap {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .mobile-menu {
@@ -1496,7 +1489,7 @@ button {
   flex-direction: column;
   gap: 40px;
   margin-top: 40px;
-  padding-bottom: 100px;
+  margin-bottom: auto;
 }
 .mobile-menu .link {
   display: block;
